@@ -5,7 +5,7 @@ def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
 
 setup(
-    name = "fiepipelite",
+    name = "fpipelite",
     version = "0.1.0.dev1",
     author= "Bradley Friedman",
     author_email = "brad@fie.us",
@@ -13,7 +13,7 @@ setup(
     license = "MIT",
     keywords = "pipeline,workflow,fie,desktop",
     url = "http://www.fie.us",
-    py_modules=["fiepipelite"],
+    py_modules=["fpipelite"],
     packages = find_packages(),
 
     install_requires=["pytest","atomicfile","rx"],
@@ -24,8 +24,8 @@ setup(
 #        ],
         'console_scripts': [
             'fpipelite = fpipelite.cli.fpipelite:main',
-            'fpipelite.project.print = fpipelite.cli.projects:print_project_data',
-            'fpipelite.project.new = fpipelite.cli.projects:new_project',
+#            'fpipelite.project.print = fpipelite.cli.projects:print_project_data',
+#            'fpipelite.project.new = fpipelite.cli.projects:new_project',
         ],
  #       'fiepipe.plugin.shell.gitasset.v1': [
  #           'watchfolders = fiepipedesktoplib.watchfolder.shell.watchfolder:git_asset_shell_plugin',
